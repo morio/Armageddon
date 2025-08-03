@@ -4,5 +4,8 @@
  .wrap {text-wrap:wrap;}
  .action {color:#4a86e8}
  .anomaly-header {font-weight: bold;}
+ .battle-order-header {font-weight: bold;}
+ .blessing-header {font-weight: bold;}
+ .blessing-reminder {display:none;}
  .anomalies {display: none;}
  .tactical-agenda {display: none;}

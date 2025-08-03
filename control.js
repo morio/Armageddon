@@ -43,6 +43,24 @@ function select_tactical_agenda(event)
         tactical_agenda.style.display = "block";
 }
 
+function check_blessing()
+{
+    const blessing_checkboxes = document.querySelectorAll(".blessing-checkbox");
+    checked = [];
+    blessing_checkboxes.forEach(checkbox => {
+        if (checkbox.checked)
+        {
+            document.querySelector("." + checkbox.id + "-reminder").style.display = "block";
+            checked.push(checkbox.id);
+        }
+        else
+        {
+            document.querySelector("." + checkbox.id + "-reminder").style.display = "none";
+        }
+    })
+    localStorage.setItem("m1-blessings", JSON.stringify(checked));
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const anomaly_set_1 = document.getElementById('anomaly-set-1');
     anomaly_set_1.addEventListener("change", (event) => {select_anomaly(event)});
@@ -62,4 +80,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     tactical_agenda.addEventListener("change", (event) => {select_tactical_agenda(event)});
     tactical_agenda.value = localStorage.getItem("m1-select-tactical-agenda") || "none";
     tactical_agenda.dispatchEvent(new Event("change"));
+
+    const blessing_json = localStorage.getItem("m1-blessings");
+    if (blessing_json)
+    {
+        let blessings = JSON.parse(blessing_json);
+        blessings.forEach(blessing => {
+            document.getElementById(blessing).checked = true;
+        });
+        check_blessing();
+    }
+
+    const blessing_checkboxes = document.querySelectorAll(".blessing-checkbox");
+    blessing_checkboxes.forEach(checkbox => {        
+        checkbox.addEventListener("change", (_) => {check_blessing();});
+    });
+
+
 });
