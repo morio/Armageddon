@@ -43,10 +43,53 @@ function select_tactical_agenda(event)
         tactical_agenda.style.display = "block";
 }
 
+function check_agenda()
+{
+    const agenda_checkboxes = document.querySelectorAll(".agenda-checkbox");
+    let checked = [];
+    agenda_checkboxes.forEach(checkbox => {
+        if (checkbox.checked)
+        {
+            document.querySelector("." + checkbox.id + "-reminder").style.display = "block";
+            checked.push(checkbox.id);
+        }
+        else
+        {
+            document.querySelector("." + checkbox.id + "-reminder").style.display = "none";
+        }
+    })
+    localStorage.setItem("m1-agendas", JSON.stringify(checked));
+}
+
+
+function update_bonus_agenda()
+{
+    const bonus_agenda_title = document.getElementById("bonus-agenda-title");
+    const bonus_agenda_text_area = document.getElementById("bonus-agenda-text-area");
+    const reminder = document.querySelector(".bonus-agenda-reminder");
+
+    const bonus_agenda_header = document.querySelector(".bonus-agenda-header-reminder");
+    bonus_agenda_header.textContent = bonus_agenda_title.value;
+    localStorage.setItem("m1-bonus-agenda-title",  bonus_agenda_title.value);
+    const bonus_agenda_description = document.querySelector(".bonus-agenda-body-reminder");
+    bonus_agenda_description.textContent = bonus_agenda_text_area.value;
+    localStorage.setItem("m1-bonus-agenda-description", bonus_agenda_text_area.value);
+
+    if (bonus_agenda_text_area.value.length === 0 && bonus_agenda_title.value.length === 0)
+    {
+        reminder.style.display = "none";
+    }
+    else
+    {
+        reminder.style.display = "block";
+    }
+}
+
+
 function check_blessing()
 {
     const blessing_checkboxes = document.querySelectorAll(".blessing-checkbox");
-    checked = [];
+    let checked = [];
     blessing_checkboxes.forEach(checkbox => {
         if (checkbox.checked)
         {
@@ -80,6 +123,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
     tactical_agenda.addEventListener("change", (event) => {select_tactical_agenda(event)});
     tactical_agenda.value = localStorage.getItem("m1-select-tactical-agenda") || "none";
     tactical_agenda.dispatchEvent(new Event("change"));
+
+
+    const agenda_json = localStorage.getItem("m1-agendas");
+    if (agenda_json)
+    {
+        let agendas = JSON.parse(agenda_json);
+        agendas.forEach(agenda => {
+            document.getElementById(agenda).checked = true;
+        });
+        check_agenda();
+    }
+
+    const agenda_checkboxes = document.querySelectorAll(".agenda-checkbox");
+    agenda_checkboxes.forEach(checkbox => {        
+        checkbox.addEventListener("change", (_) => {check_agenda();});
+    });
+
+    const bonus_agenda_title = document.getElementById("bonus-agenda-title");
+    const bonus_agenda_text_area = document.getElementById("bonus-agenda-text-area");
+    const bonus_agenda_title_text = localStorage.getItem("m1-bonus-agenda-title"); 
+    const bonus_agenda_description_text = localStorage.getItem("m1-bonus-agenda-description");
+    if (bonus_agenda_title_text)
+        bonus_agenda_title.value = bonus_agenda_title_text;
+    if (bonus_agenda_description_text)
+        bonus_agenda_text_area.value = bonus_agenda_description_text;
+    bonus_agenda_title.addEventListener("input", (_) => update_bonus_agenda());
+    bonus_agenda_text_area.addEventListener("input", (_) => update_bonus_agenda());
+    update_bonus_agenda();
 
     const blessing_json = localStorage.getItem("m1-blessings");
     if (blessing_json)

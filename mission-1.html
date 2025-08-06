@@ -477,6 +477,72 @@ No Empyric Anomaly
 
     <div class="row">
         <div class="column">
+            <h3>Agenda Reminders</h3>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-assassinate-reminder">
+        <div class="row">
+            <div class="column">
+                <div  class="agenda-header"> Assassinate</div>
+                Each time a model from your Crusade army destroys an enemy CHARACTER unit, that model’s unit gains 2XP. Each time a model from your Crusade army destroys an enemy WARLORD, EPIC HERO or UNBOUND ADVERSARIES CHARACTER unit, that model's unit gains an additional 2XP.
+                <br>
+                At the end of the battle, if the enemy WARLORD is destroyed, you gain 1 strategic point.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-lines-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header"> Lines of Defence</div>
+                At the end of the battle, you can select either two or three units from your Crusade army (excluding AIRCRAFT and Battle-shocked units). One of these units must be wholly within your deployment zone, one must be wholly within your opponent's deployment zone, and - if you are selecting three units - the third must be wholly within 12" of the centre of the battlefield. If you cannot select two units, then you cannot achieve this Agenda. Each selected unit gains 2XP.
+                <br>
+                At the end of the battle, if units from your Crusade army gained XP via this Agenda and you were able to select three units that satisfied the conditions above, you gain 1 strategic point.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-warp-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header">Warp Rites</div>
+                At the start of the battle, no objective markers have Warp rites completed.
+    <div><span class="action">WARP RITES (ACTION)</span></div>
+    <div><span class="action">STARTS:</span> Your Shooting phase.</div>
+    <div><span class="action">UNITS:</span> One unit from your Crusade army within range of an objective marker that has not had Warp rites completed.</div>
+    <div><span class="action">COMPLETES:</span> End of your turn, if you control that objective marker.</div>
+    <div><span class="action">IF COMPLETED:</span> That objective marker has had Warp rites completed and the unit that performed the Action gains 1 Warp counter and 2XP.</div> 
+    At the end of the battle, if three or more objective markers on the battlefield have had Warp rites completed by your Crusade army, you gain 1 strategic point. A unit cannot gain more than 6XP per battle from this Agenda.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-cleanse-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header">Cleanse and Purge</div>
+                Each time a unit from your Crusade army destroys an UNBOUND ADVERSARIES unit and/or an enemy unit that has one or more Warp counters, that unit gains 1XP (if your unit had no Warp counters when it destroyed that enemy unit, it gains 2XP instead). A unit cannot gain more than 2XP per battle from this Agenda. At the end of the battle, if 5 or more units from your Crusade army gained XP from this Agenda, you gain 1 strategic point.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-sacrificial-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header">Sacrificial Defiance</div>
+                At the start of the battle, your opponent selects up to two different objective markers on the battlefield. At the end of the battle, select up to one of those objective markers that you control and up to three units from your Crusade army that are within range of that objective marker. Each of those units gains 2XP.
+            </div>
+        </div>
+    </div>
+    
+    <div class="bonus-agenda-reminder">
+        <div class="row">
+            <div class="column">
+                <h3>Bonus Agenda Reminders</h3>
+                <div class="agenda-header bonus-agenda-header-reminder"></div>
+                <div class="bonus-agenda-body-reminder"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
             <h3>Blessing Reminders</h3>
         </div>
     </div>
@@ -717,6 +783,71 @@ At the end of the battle, the victor can select one unit from their Crusade army
 
         </div>
     </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Fixed Agendas</h2>
+            These are the fixed agenda's. Generally you will pick two. One of them can be tactical, in which case you would use the tactical agenda selector above. There is also a crusade blessing
+            that lets you pick a third. The text box is for the bonus agenda you get from your codex's crusade rules campaign.
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-assassinate" value=""><label for="agenda-assassinate" class="label-inline agenda-header"> Assassinate</label> - Each time a model from your Crusade army destroys an enemy CHARACTER unit, that model’s unit gains 2XP. Each time a model from your Crusade army destroys an enemy WARLORD, EPIC HERO or UNBOUND ADVERSARIES CHARACTER unit, that model's unit gains an additional 2XP.
+            <br>
+            At the end of the battle, if the enemy WARLORD is destroyed, you gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-lines" value=""><label for="agenda-lines" class="label-inline agenda-header"> Lines of Defence</label> - At the end of the battle, you can select either two or three units from your Crusade army (excluding AIRCRAFT and Battle-shocked units). One of these units must be wholly within your deployment zone, one must be wholly within your opponent's deployment zone, and - if you are selecting three units - the third must be wholly within 12" of the centre of the battlefield. If you cannot select two units, then you cannot achieve this Agenda. Each selected unit gains 2XP.
+            <br>
+            At the end of the battle, if units from your Crusade army gained XP via this Agenda and you were able to select three units that satisfied the conditions above, you gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-warp" value=""><label for="agenda-warp" class="label-inline agenda-header">Warp Rites</label> - At the start of the battle, no objective markers have Warp rites completed.
+<div><span class="action">WARP RITES (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> One unit from your Crusade army within range of an objective marker that has not had Warp rites completed.</div>
+<div><span class="action">COMPLETES:</span> End of your turn, if you control that objective marker.</div>
+<div><span class="action">IF COMPLETED:</span> That objective marker has had Warp rites completed and the unit that performed the Action gains 1 Warp counter and 2XP.</div> 
+At the end of the battle, if three or more objective markers on the battlefield have had Warp rites completed by your Crusade army, you gain 1 strategic point. A unit cannot gain more than 6XP per battle from this Agenda.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-cleanse" value=""><label for="agenda-cleanse" class="label-inline agenda-header">Cleanse and Purge</label> - Each time a unit from your Crusade army destroys an UNBOUND ADVERSARIES unit and/or an enemy unit that has one or more Warp counters, that unit gains 1XP (if your unit had no Warp counters when it destroyed that enemy unit, it gains 2XP instead). A unit cannot gain more than 2XP per battle from this Agenda. At the end of the battle, if 5 or more units from your Crusade army gained XP from this Agenda, you gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-sacrificial" value=""><label for="agenda-sacrificial" class="label-inline agenda-header">Sacrificial Defiance</label> - At the start of the battle, your opponent selects up to two different objective markers on the battlefield. At the end of the battle, select up to one of those objective markers that you control and up to three units from your Crusade army that are within range of that objective marker. Each of those units gains 2XP.
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="agenda-header">Bonus Agenda</div>
+            From Army Codex's Crusade Campaign Rules (clear both text fields to hide)
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+           <input class="bonus-agenda-title" id="bonus-agenda-title" placeholder="Write down the title of your bonus agenda...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <textarea class="bonus-agenda-text-area" id="bonus-agenda-text-area" placeholder="Write down the description of bonus agenda here if you have one..."></textarea>
+        </div>
+    </div>
+
     <div class="row">
         <div class="column">
             <h2>Crusade Blessings</h2>
