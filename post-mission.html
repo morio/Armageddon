@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="post-mission.js"></script>
+        <link rel="stylesheet" href="milligram.min.css" />
+        <link rel="stylesheet" href="style.css" />  
+    </head>
+    <body>
+    <div class="row">
+      <div class="column">
+        <h1>Post mission copy text</h1>
+      </div>
+    </div>
+    <div class="alert-fixed hdn">Copied!</div>
+    <div class="row">
+      <div class="column">
+        <h3>Out of action test</h3>
+        After a battle, all models from your Crusade army that are destroyed at the end of the battle are restored to your Crusade force and all wounds they have lost are regained. This represents units replenishing their numbers, wounded warriors returning to the fray and battle tanks being recovered and repaired. The only lasting effects are any Battle Scars the unit acquires, as described below.
+        <br>
+        At the end of each Crusade battle, you must take an Out of Action test for each unit from your Crusade army that is destroyed. To do so, roll one D6. On a 2+, the test is passed and nothing happens. On a 1, the test is failed; you must now choose one of the following options for that unit.
+        <br>
+        Take a devastating blow or roll for a battle scar.
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input class="copy-text"  value="Devastating Blow" readonly> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text"  readonly>You can only select this result for units that have one or more Battle Honours. Select one of that unit's Battle Honours and remove it. Update that unit's Crusade card and reduce its Crusade points total by 1 (or by 2 if that unit is TITANIC) to account for the lost Battle Honour.
+        </textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Battle Scar</h3>
+            Each time a unit gains a Battle Scar, either roll one Do and consult the table opposite to randomly determine which Battle Scar that unit has gained, or choose the Battle Scar that you think tells the best narrative. A unit can have more than one Battle Scar, but it cannot have the same Battle Scar more than once (if a duplicate result is rolled, roll again until a different result is rolled). A unit cannot have more than three Battle Scars; each time a unit with three Battle Scars fails an Out of Action test, you must select the Devastating Blow result for it. If the unit has no Battle Honours remaining, you must instead remove that unit from your Crusade force - it is permanently destroyed or otherwise unable to fight any more. Make a note of each Battle Scar a unit has on its Crusade card and subtract 1 from its Crusade points total for each Battle Scar it currently has. Note that this can mean a unit has a negative Crusade points total.
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            Roll [1]
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Crippling Damage" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>This unit cannot Advance and you must subtract 1" from the Move characteristic of models in this unit.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            Roll [2]
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Battle-Weary" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time this unit takes a Battle-shock, Leadership, Desperate Escape or Out of Action test, subtract 1 from that test.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            Roll [3]
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Fatigued" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Subtract 1 from the Objective Control characteristic of models in this unit and this unit never receives a Charge bonus.</textarea>
+      </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            Roll [4]
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Disgraced" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>You cannot use any Stratagems to affect this unit and this unit cannot be Marked for Greatness.</textarea>
+      </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            Roll [5]
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Mark of Shame" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>This unit cannot form an Attached unit, it is unaffected by the Aura abilities of friendly units, and it cannot be Marked for Greatness.</textarea>
+      </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            Roll [6]
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Deep Scars" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time a Critical Hit is scored against this unit, that attack automatically wounds this unit.</textarea>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <h2>Battle Honours</h2>
+            Each time a unit gains a rank, it can gain one Battle Honour. Units can also gain additional Battle Honours by other means (such as by winning certain missions, fulfilling certain Agendas, etc.). Each time a unit gains a Battle Honour, increase its Crusade points total by 1 (if the unit is TITANIC, increase its Crusade points total by 2 instead). Make a note of each Battle Honour a unit has on its Crusade card. A unit can never have more than three Battle Honours unless it is a CHARACTER, in which case it can have up to six Battle Honours. Once the maximum is reached, each time a unit gains a new Battle Honour it must first remove one of its existing Battle Honours.
+            <br>
+            There are several categories of Battle Honours that can be bestowed upon a unit, such as Battle Traits, Weapon Modifications and Crusade Relics. Each time a unit gains a Battle Honour, you can select from any category.
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+    Artificer Relics
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Periapt Of The Righteous" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Add 2 to the bearer's Wounds characteristic. In addition, in your Command phase, you can remove one Warp counter the bearer's unit has. If you do, the bearer regains up to D3 lost wounds.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Tartarine Cuirass" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack. This is not cumulative with any other modifiers that worsen the Damage characteristic of an attack.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Grimoire Abjuratis" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time a BEAST or MONSTER model makes an attack that targets the bearer's unit, subtract 1 from the Wound roll. If the attacking model is an UNBOUND ADVERSARIES unit, subtract 1 from the Hit roll as well.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Cowl Of Vehemence" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>PSYKER model only. Each time the bearer makes a Psychic Attack, re-roll a Wound roll of 1. While the bearer's unit has one or more Warp counters, each time the bearer makes a Psychic Attack, you can re-roll the Wound roll instead.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+    Antiquity Relics
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Riftwalker's Astrolabe" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>The bearer has the Deep Strike ability. While the bearer is leading a unit, models in that unit have the Deep Strike ability.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Weapon Of Renown" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Select one melee weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait). That weapon is now a Crusade Relic and it has the [ANTI-UNBOUND ADVERSARIES 4+] and [DEVASTATING WOUNDS] abilities.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Exorcist's Thurible" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>The bearer has the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks. In addition, once per battle, just after rolling to generate an Anomaly, you can remove one Warp counter the bearer has. If you do, you can change one of the dice that were part of that roll to a dice result of your choosing (changing the anomaly generated).</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Sanguiflamme Of Armageddon" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>At the start of your Command phase, if the bearer is within range of an objective marker you control, you can choose one of the following:
+• Remove 1 Warp counter that the bearer's unit has. If you do, gain 1CP.
+• Take a Leadership test for this model. If that test is passed, gain 1CP.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+    Legendary Relics
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Vengeance Totem" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>When the bearer's unit is destroyed, roll one D6 for every enemy unit within 6": on a 4+, that enemy unit suffers D3 mortal wounds. Then, if the bearer's unit had one or more Warp counters when it was destroyed, you can set up one unit of UNBOUND ADVERSARIES on the battlefield as close as possible to where the bearer's model was destroyed and not within Engagement Range of any enemy units. The Power Level of this unit is equal to the number of Warp counters the bearer's unit had.</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Empyromancer's Focus" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>PSYKER model only. The bearer's Psychic weapons gain the [SUSTAINED HITS 2] ability. In addition, at the end of the Set Warp Events step, if the bearer is in your Crusade army, you can choose to increase or decrease the intensity of the Warp Events used in that battle by 1 (to a minimum of 1 and a maximum of 3).</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warp-Touched Weapon" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>INFANTRY or MOUNTED model only. Select one melee weapon that the bearer is equipped with (excluding a weapon that has been replaced by an Enhancement or upgraded via the Weapon Modifications Battle Trait).
+That weapon is now a Crusade Relic and you add 1 to the Attacks, Strength and Damage characteristic of that weapon. In addition, each time the bearer is selected to fight, you can first remove up to 3 Warp counters from the bearer's unit. For each Warp counter removed in this way, until the end of the phase, add an additional 1 to the Attacks and Strength characteristics of that weapon.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Beast-Ward Barbute" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time a BEAST or MONSTER unit targets the bearer's unit, before making any attacks, that BEAST or MONSTER unit must take a Battle-shock test. Each time a model in that BEAST or MONSTER unit makes an attack that targets the bearer's unit, subtract 1 from the Hit roll and, if that test was failed, subtract 1 from the Wound roll as well. In addition, once per battle, in your Command phase, you can select one UNBOUND ADVERSARIES unit within 18" of the bearer.
+If you do, until the start of your next Command phase, that UNBOUND ADVERSARIES unit loses the UNBOUND ADVERSARIES keyword and is part of your Crusade army.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Weapon Modifications</h3>
+            Weapon Modifications are upgrades made to a warrior's armaments that improve their lethality in combat. Each time a unit gains this Battle Honour, you must select one model in that unit (if the unit includes a CHARACTER model or Unit Champion, you must select that model <span class = "header">!! House Rule - You can choose any model in your unit, such as a sniper !!)</span>, then you must select one weapon equipped by that model. You cannot select a weapon that has already been upgraded by this Battle Honour and you cannot select a weapon that has already been replaced by an Enhancement or a Crusade Relic - such artefacts cannot be modified.
+Each time you select a weapon, roll two D6 and consult the table below to randomly determine which two Weapon Modifications it gains (if a duplicate result is rolled, roll both dice again until two different results are rolled), or choose the two different Weapon Modifications that you think tell the best narrative.
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-1"><label class="label-inline header" for="weapon-mod-1">[1] <span id=weapon-mod-1-title>Finely Balanced</span></label>
+        <div id="weapon-mod-1-description">Improve this weapon's Ballistic Skill or Weapon Skill characteristic by 1.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-2"><label class="label-inline header" for="weapon-mod-2">[2] <span id=weapon-mod-2-title>Brutal</span></label>
+        <div id="weapon-mod-2-description">Add 1 to this weapon's Strength characteristic.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-3"><label class="label-inline header" for="weapon-mod-3">[3] <span id=weapon-mod-3-title>Armour Piercing</span></label>
+        <div id="weapon-mod-3-description">Improve this weapon's Armour Penetration characteristic by 1.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-4"><label class="label-inline header" for="weapon-mod-4">[4] <span id=weapon-mod-4-title>Master-Worked</span></label>
+        <div id="weapon-mod-4-description">Add 1 to this weapon's Damage characteristic.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-5"><label class="label-inline header" for="weapon-mod-5">[5] <span id=weapon-mod-5-title>Heirloom</span></label>
+        <div id="weapon-mod-5-description">Add 1 to this weapon's Attacks characteristic.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-6"><label class="label-inline header" for="weapon-mod-6">[6] <span id=weapon-mod-6-title>Precise</span></label>
+        <div id="weapon-mod-6-description">Each time a Critical Wound is scored for an attack made with this weapon, that attack has the [PRECISION] ability.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text" id="weapon-mod-title" placeholder="Select two weapon mods from above..." readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" id="weapon-mod-description" placeholder="Select two weapon mods from above..." readonly></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Crusade Relics</h3>
+            Crusade Relics are rare items of power that your warriors discover as they quest across the galaxy. Only CHARACTER models can gain Crusade Relics. When a model gains a Crusade Relic, simply select the Crusade Relic that you want that model to have. A CHARACtER model can have any number of Crusade Relics, but the same Crusade Relic cannot be included in your Crusade force more than once. Crusade Relics can be found in many books, including this one.
+            <br>
+            There are three categories of Crusade Relics: Artificer Relics, Antiquity Relics and Legendary Relics. Some categories of Crusade Relic can only be given to CHARACTER models if their unit has achieved a particular rank, as shown in the table below.
+            <br>
+            Unlike other Battle Honours, which increase a unit's Crusade points total by 1 (or 2 if the CHARACTER unit is TITANIC), each time you give a CHARACTER model a Crusade Relic, you must increase its unit's Crusade points total by the amount shown in the table below instead. Each time you give a CHARACTER model a Crusade Relic, make a note of it on its Crusade card.
+
+        </div>
+    </div>
+ <div class="row">
+        <div class="column column-80 column-offset-10">
+
+<table>
+<thead> <th>Relice Category</th><th>Rank Required</th><th>Crusde Point Increase</th></thead>
+<tbody>
+<tr><td>Artificer</td><td>Any</td><td>+1</td></tr>
+<tr><td>Antiquity</td><td>Heroic or Legendary</td><td>+2</td></tr>
+<tr><td>Legendary</td><td>Legendary</td><td>+3</td></tr>
+</tbody>
+</table>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+

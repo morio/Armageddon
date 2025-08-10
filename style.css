@@ -3,6 +3,7 @@
  .hdn {display:none;}
  .wrap {text-wrap:wrap;}
  .action {color:#4a86e8}
+ .header {font-weight: bold;}
  .anomaly-header {font-weight: bold;}
  .battle-order-header {font-weight: bold;}
  .agenda-header {font-weight: bold;}
@@ -12,3 +13,16 @@
  .tactical-agenda {display: none;}
  .agenda-reminder {display: none;}
  .bonus-agenda-reminder {display: none;}
+.center-text { position: absolute; }
+.alert-fixed {
+    position:fixed; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%;
+    z-index:9999; 
+    border-radius:0px;
+    font-size: 24px; 
+    color: #333; 
+    background-color:
+    lightblue;
+}
