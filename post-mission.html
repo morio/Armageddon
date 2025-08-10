@@ -9,7 +9,9 @@
     <body>
     <div class="row">
       <div class="column">
-        <h1>Post mission copy text</h1>
+        <h1>Post mission bookkeeping</h1>
+        Click on a text input to text area to copy the said text into the your clipboard so you can paste it in to the Aministraturm post mission bookkeeping.
+        For example Battle Scars for failed out of action rolls or Battle Honor claims from the Administratum rosters after gaining a rank. 
       </div>
     </div>
     <div class="alert-fixed hdn">Copied!</div>
@@ -144,6 +146,86 @@
             There are several categories of Battle Honours that can be bestowed upon a unit, such as Battle Traits, Weapon Modifications and Crusade Relics. Each time a unit gains a Battle Honour, you can select from any category.
         </div>
     </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Weapon Modifications</h3>
+            Weapon Modifications are upgrades made to a warrior's armaments that improve their lethality in combat. Each time a unit gains this Battle Honour, you must select one model in that unit (if the unit includes a CHARACTER model or Unit Champion, you must select that model <span class = "header">!! House Rule - You can choose any model in your unit, such as a sniper !!)</span>, then you must select one weapon equipped by that model. You cannot select a weapon that has already been upgraded by this Battle Honour and you cannot select a weapon that has already been replaced by an Enhancement or a Crusade Relic - such artefacts cannot be modified.
+Each time you select a weapon, roll two D6 and consult the table below to randomly determine which two Weapon Modifications it gains (if a duplicate result is rolled, roll both dice again until two different results are rolled), or choose the two different Weapon Modifications that you think tell the best narrative.
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-1"><label class="label-inline header" for="weapon-mod-1">[1] <span id=weapon-mod-1-title>Finely Balanced</span></label>
+        <div id="weapon-mod-1-description">Improve this weapon's Ballistic Skill or Weapon Skill characteristic by 1.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-2"><label class="label-inline header" for="weapon-mod-2">[2] <span id=weapon-mod-2-title>Brutal</span></label>
+        <div id="weapon-mod-2-description">Add 1 to this weapon's Strength characteristic.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-3"><label class="label-inline header" for="weapon-mod-3">[3] <span id=weapon-mod-3-title>Armour Piercing</span></label>
+        <div id="weapon-mod-3-description">Improve this weapon's Armour Penetration characteristic by 1.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-4"><label class="label-inline header" for="weapon-mod-4">[4] <span id=weapon-mod-4-title>Master-Worked</span></label>
+        <div id="weapon-mod-4-description">Add 1 to this weapon's Damage characteristic.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-5"><label class="label-inline header" for="weapon-mod-5">[5] <span id=weapon-mod-5-title>Heirloom</span></label>
+        <div id="weapon-mod-5-description">Add 1 to this weapon's Attacks characteristic.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-6"><label class="label-inline header" for="weapon-mod-6">[6] <span id=weapon-mod-6-title>Precise</span></label>
+        <div id="weapon-mod-6-description">Each time a Critical Wound is scored for an attack made with this weapon, that attack has the [PRECISION] ability.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text" id="weapon-mod-title" placeholder="Select two weapon mods from above..." readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" id="weapon-mod-description" placeholder="Select two weapon mods from above..." readonly></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Crusade Relics</h3>
+            Crusade Relics are rare items of power that your warriors discover as they quest across the galaxy. Only CHARACTER models can gain Crusade Relics. When a model gains a Crusade Relic, simply select the Crusade Relic that you want that model to have. A CHARACTER model can have any number of Crusade Relics, but the same Crusade Relic cannot be included in your Crusade force more than once. Crusade Relics can be found in many books, including this one.
+            <br>
+            There are three categories of Crusade Relics: Artificer Relics, Antiquity Relics and Legendary Relics. Some categories of Crusade Relic can only be given to CHARACTER models if their unit has achieved a particular rank, as shown in the table below.
+            <br>
+            Unlike other Battle Honours, which increase a unit's Crusade points total by 1 (or 2 if the CHARACTER unit is TITANIC), each time you give a CHARACTER model a Crusade Relic, you must increase its unit's Crusade points total by the amount shown in the table below instead. Each time you give a CHARACTER model a Crusade Relic, make a note of it on its Crusade card.
+
+        </div>
+    </div>
+ <div class="row">
+        <div class="column column-80 column-offset-10">
+
+<table>
+<thead> <th>Relice Category</th><th>Rank Required</th><th>Crusde Point Increase</th></thead>
+<tbody>
+<tr><td>Artificer</td><td>Any</td><td>+1</td></tr>
+<tr><td>Antiquity</td><td>Heroic or Legendary</td><td>+2</td></tr>
+<tr><td>Legendary</td><td>Legendary</td><td>+3</td></tr>
+</tbody>
+</table>
+        </div>
+    </div>
+
 
     <div class="row">
         <div class="column header">
@@ -304,84 +386,452 @@ If you do, until the start of your next Command phase, that UNBOUND ADVERSARIES 
 
     <div class="row">
         <div class="column">
-            <h3>Weapon Modifications</h3>
-            Weapon Modifications are upgrades made to a warrior's armaments that improve their lethality in combat. Each time a unit gains this Battle Honour, you must select one model in that unit (if the unit includes a CHARACTER model or Unit Champion, you must select that model <span class = "header">!! House Rule - You can choose any model in your unit, such as a sniper !!)</span>, then you must select one weapon equipped by that model. You cannot select a weapon that has already been upgraded by this Battle Honour and you cannot select a weapon that has already been replaced by an Enhancement or a Crusade Relic - such artefacts cannot be modified.
-Each time you select a weapon, roll two D6 and consult the table below to randomly determine which two Weapon Modifications it gains (if a duplicate result is rolled, roll both dice again until two different results are rolled), or choose the two different Weapon Modifications that you think tell the best narrative.
+            <h2>Battle Traits</h2>
+            Battle Traits are skills or upgrades that units have acquired during their years of warfare, and help to give them a vital edge on the battlefield. Each time a unit gains a Battle Trait, either roll one D6 and consult the relevant table to randomly determine which Battle Trait the unit has gained, or choose the Battle Trait that you think tells the best narrative. A unit can have more than one Battle Trait, but it cannot have the same Battle Trait more than once (if a duplicate result is rolled, roll again until a different result is rolled).
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>Infantry Units D6</h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [1] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Fortune's Favoured" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Models in this unit have a 6+ invulnerable save. While this unit has one or more Warp counters, models in this unit have a 5+ invulnerable save (excluding against Psychic Attacks).
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [2] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warp-Hardened Veterans" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time this unit is Marked for Greatness, it gains an additional 2XP. In addition, once per battle, in your Command phase, you can add or remove one Warp counter to/from this unit.
+</textarea>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column header">
+            [3] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Adaptive Camouflage" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>This unit has the Stealth ability and if this unit is in Strategic Reserves, it counts the battle round number as one higher than the current battle round number for the purpose of determining when and where it is set up.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [4] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Stalwarts" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Once per battle, in your Command phase, this unit can use this Battle Trait. When it does, if it is Battle-shocked, it is no longer Battle-shocked and, until the end of the turn, this unit is eligible to perform an Action in a turn in which it Fell Back and/or while within Engagement Range of one or more enemy units.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+            [5] Rolled
         </div>
     </div>
     <div class="row">
       <div class="column">
-        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-1"><label class="label-inline header" for="weapon-mod-1">[1] <span id=weapon-mod-1-title>Finely Balanced</span></label>
-        <div id="weapon-mod-1-description">Improve this weapon's Ballistic Skill or Weapon Skill characteristic by 1.</div>
+            <input class="copy-text"  value="Footsloggers" readonly>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-2"><label class="label-inline header" for="weapon-mod-2">[2] <span id=weapon-mod-2-title>Brutal</span></label>
-        <div id="weapon-mod-2-description">Add 1 to this weapon's Strength characteristic.</div>
+        <textarea class="copy-text" readonly>Add 1" to the Move characteristic of models in this unit.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+            [6] Rolled
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warp Hunters" readonly>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-3"><label class="label-inline header" for="weapon-mod-3">[3] <span id=weapon-mod-3-title>Armour Piercing</span></label>
-        <div id="weapon-mod-3-description">Improve this weapon's Armour Penetration characteristic by 1.</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-4"><label class="label-inline header" for="weapon-mod-4">[4] <span id=weapon-mod-4-title>Master-Worked</span></label>
-        <div id="weapon-mod-4-description">Add 1 to this weapon's Damage characteristic.</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-5"><label class="label-inline header" for="weapon-mod-5">[5] <span id=weapon-mod-5-title>Heirloom</span></label>
-        <div id="weapon-mod-5-description">Add 1 to this weapon's Attacks characteristic.</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <input type="checkbox" class="weapon-mod-checkbox" id="weapon-mod-6"><label class="label-inline header" for="weapon-mod-6">[6] <span id=weapon-mod-6-title>Precise</span></label>
-        <div id="weapon-mod-6-description">Each time a Critical Wound is scored for an attack made with this weapon, that attack has the [PRECISION] ability.</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-            <input class="copy-text" id="weapon-mod-title" placeholder="Select two weapon mods from above..." readonly>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <textarea class="copy-text" id="weapon-mod-description" placeholder="Select two weapon mods from above..." readonly></textarea>
+        <textarea class="copy-text" readonly>Each time a model in this unit makes an attack that targets the closest eligible target, you can re-roll a Wound roll of 1. If the target of that attack is an UNBOUND ADVERSARIES unit, and it is the closest eligible target, you can re-roll the Wound roll instead.
+</textarea>
       </div>
     </div>
 
     <div class="row">
         <div class="column">
-            <h3>Crusade Relics</h3>
-            Crusade Relics are rare items of power that your warriors discover as they quest across the galaxy. Only CHARACTER models can gain Crusade Relics. When a model gains a Crusade Relic, simply select the Crusade Relic that you want that model to have. A CHARACtER model can have any number of Crusade Relics, but the same Crusade Relic cannot be included in your Crusade force more than once. Crusade Relics can be found in many books, including this one.
-            <br>
-            There are three categories of Crusade Relics: Artificer Relics, Antiquity Relics and Legendary Relics. Some categories of Crusade Relic can only be given to CHARACTER models if their unit has achieved a particular rank, as shown in the table below.
-            <br>
-            Unlike other Battle Honours, which increase a unit's Crusade points total by 1 (or 2 if the CHARACTER unit is TITANIC), each time you give a CHARACTER model a Crusade Relic, you must increase its unit's Crusade points total by the amount shown in the table below instead. Each time you give a CHARACTER model a Crusade Relic, make a note of it on its Crusade card.
-
-        </div>
-    </div>
- <div class="row">
-        <div class="column column-80 column-offset-10">
-
-<table>
-<thead> <th>Relice Category</th><th>Rank Required</th><th>Crusde Point Increase</th></thead>
-<tbody>
-<tr><td>Artificer</td><td>Any</td><td>+1</td></tr>
-<tr><td>Antiquity</td><td>Heroic or Legendary</td><td>+2</td></tr>
-<tr><td>Legendary</td><td>Legendary</td><td>+3</td></tr>
-</tbody>
-</table>
+            <h3>Monster And Vehicle Units D6</h3>
         </div>
     </div>
 
+    <div class="row">
+      <div class="column header">
+            [1] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warding Inscriptions" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Models in this unit have the Feel No Pain 6+ ability against Psychic Attacks and mortal wounds. While this unit has one or more Warp counters, models in this unit have the Feel No Pain 5+ ability against Psychic Attacks and mortal wounds.
 
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [2] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Advanced Suspensors" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Ranged Weapons equipped by models in this unit have the [ASSAULT] ability.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [3] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Extra Armour" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Add 1 to the Toughness.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [4] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Juggernaut" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>You can ignore any or all modifiers to this unit's Move characteristic. In addition, each time this unit makes a Normal move, its models can move through sections of terrain features more than 2" in height, but if any do so, just after this unit has moved, roll one D6: on a 1-3 this unit is Battle-shocked.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+            [5] Rolled
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Endless Rage" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>This unit is eligible to shoot and declare a charge in a turn in which it Fell Back.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+            [6] Rolled
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Daemon Hunter" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time this unit targets an UNBOUND ADVERSARIES unit, you can re-roll the Hit roll. In addition, at the Update Crusade Cards step, if this unit would gain XP from Dealers in Death, it gains 1 additional XP.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Mounted Units D6</h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [1,2] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Tip Of The Spear" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>This unit has the Scouts 6" ability.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [3,4] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Skilled Riders" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time this unit makes a Normal, Advance or Charge move, its models can move through sections of terrain features more than 2" in height, but if any do so, just after this unit has moved, roll one D6: on a 1, this unit suffers D3 mortal wounds and is Battle-shocked; on 2-3 this unit is Battle-shocked.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [5,6] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Reactive Redeployment" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>After both players have deployed their armies, you can redeploy this unit.
+When doing so, you can set this unit up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Beast Units D6</h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [1,2] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="War Beasts" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Add 1 to Advance and Charge rolls made for this unit.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [3,4] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Leaping Frenzy" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit, adding 1 to the result if this unit has 1 or more Warp counters: for each 5+, that enemy unit suffers 1 mortal wound.
+
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [5,6] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Fearsome Predators (Aura)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>While an enemy unit is within 6" of this unit, worsen the Leadership and Objective Control characteristics of models in that unit by 1 (to a minimum of 1).
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Psyker Units D6</h3>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [1] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Ritual Of Shrouding (Psychic)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>At the start of the Deploy Crusade Armies step, you can spend 1RP; if you do, until the end of the battle, each model in this unit has the Infiltrators ability.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [2] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warp Focus (Psychic)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Add 1 to the Strength characteristic of Psychic weapons equipped by models in this unit. While this unit has one or more Warp counters, add 2 to the Strength characteristic of Psychic weapons equipped by models in this unit instead.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [3] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Scrier's Gaze (Aura, Psychic)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Enemy units that are set up on the battlefield from Reserves cannot be set up within 12" of this unit.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column header">
+            [4] Rolled
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warp Alacrity (Psychic)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>You can re-roll Advance and Charge rolls for this unit.
+In addition, each time this unit is selected to Advance, you can remove one Warp counter from it. If you do, then until the end of the turn, this unit is not eligible to declare a charge even if another rule would let it Advance and Charge in the same turn), but you do not make an Advance roll; instead, until the end of the phase, add 6" to the Move characteristic of models in this unit.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+            [5] Rolled
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Force Shield (Psychic)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time an attack targets this unit (excluding Psychic Attacks), if the Strength characteristic of that attack is greater than the Toughness characteristic of this unit, subtract 1 from the Wound roll.
+</textarea>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column header">
+            [6] Rolled
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+            <input class="copy-text"  value="Warp Terrors (Psychic)" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <textarea class="copy-text" readonly>Each time this unit targets an UNBOUND ADVERSARIES unit, you can re-roll the Hit roll. In addition, at the Update Crusade Cards step, if this unit would gain XP from Dealers in Death, it gains 1 additional XP.
+</textarea>
+      </div>
+    </div>
 
 </body>
 </html>
