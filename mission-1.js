@@ -3,7 +3,7 @@ function select_anomaly(event)
 {
     const anomalies = document.querySelectorAll('.anomalies');
     anomalies.forEach(element => {
-        element.style.display = "none";    
+        element.style.display = "none";
     });
     const anomaly_set_1_value = document.getElementById('anomaly-set-1').value;
     localStorage.setItem("m1-anomaly-set-1", anomaly_set_1_value);
@@ -62,26 +62,42 @@ function check_agenda()
 }
 
 
-function update_bonus_agenda()
+function update_other_agenda()
 {
-    const bonus_agenda_title = document.getElementById("bonus-agenda-title");
-    const bonus_agenda_text_area = document.getElementById("bonus-agenda-text-area");
-    const reminder = document.querySelector(".bonus-agenda-reminder");
+    let has_other_agenda = false;
 
-    const bonus_agenda_header = document.querySelector(".bonus-agenda-header-reminder");
-    bonus_agenda_header.textContent = bonus_agenda_title.value;
-    localStorage.setItem("m1-bonus-agenda-title",  bonus_agenda_title.value);
-    const bonus_agenda_description = document.querySelector(".bonus-agenda-body-reminder");
-    bonus_agenda_description.textContent = bonus_agenda_text_area.value;
-    localStorage.setItem("m1-bonus-agenda-description", bonus_agenda_text_area.value);
-
-    if (bonus_agenda_text_area.value.length === 0 && bonus_agenda_title.value.length === 0)
+    for (let i = 1; i <= 4; i++)
     {
-        reminder.style.display = "none";
+        const other_agenda_title = document.getElementById("other-agenda-title-" + i);
+        const other_agenda_text_area = document.getElementById("other-agenda-text-area-" + i);
+        const current_reminder = document.getElementById("other-agenda-reminder-" + i);
+
+
+        const other_agenda_header = document.querySelector("#other-agenda-reminder-" + i + " .other-agenda-reminder-header");
+        other_agenda_header.textContent = other_agenda_title.value;
+        localStorage.setItem("m1-other-agenda-title-" + i,  other_agenda_title.value);
+        const other_agenda_description = document.querySelector("#other-agenda-reminder-" + i + " .other-agenda-reminder-description");
+        other_agenda_description.textContent = other_agenda_text_area.value;
+        localStorage.setItem("m1-other-agenda-description-" + i, other_agenda_text_area.value);
+
+        if (other_agenda_text_area.value.length === 0 && other_agenda_title.value.length === 0)
+        {
+            current_reminder.style.display = "none";
+        }
+        else
+        {
+            has_other_agenda = true;
+            current_reminder.style.display = "block";
+        }
+    }
+    const reminder_group = document.querySelector(".other-agenda-reminder-group");
+    if (has_other_agenda)
+    {
+        reminder_group.style.display = "block";
     }
     else
     {
-        reminder.style.display = "block";
+        reminder_group.style.display = "none";
     }
 }
 
@@ -102,13 +118,22 @@ function check_blessing()
         }
     })
     localStorage.setItem("m1-blessings", JSON.stringify(checked));
+    const blessing_reminder_header = document.querySelector(".blessing-reminder-header");
+    if (checked.length > 0)
+    {
+        blessing_reminder_header.style.display = "block";
+    }
+    else
+    {
+        blessing_reminder_header.style.display ="none";
+    }
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const anomaly_set_1 = document.getElementById('anomaly-set-1');
     anomaly_set_1.addEventListener("change", (event) => {select_anomaly(event)});
     anomaly_set_1.value = localStorage.getItem("m1-anomaly-set-1") || "none";
-    
+
     const anomaly_set_2 = document.getElementById('anomaly-set-2');
     anomaly_set_2.addEventListener("change", (event) => {select_anomaly(event)});
     anomaly_set_2.value = localStorage.getItem("m1-anomaly-set-2") || "none";
@@ -136,21 +161,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     const agenda_checkboxes = document.querySelectorAll(".agenda-checkbox");
-    agenda_checkboxes.forEach(checkbox => {        
+    agenda_checkboxes.forEach(checkbox => {
         checkbox.addEventListener("change", (_) => {check_agenda();});
     });
 
-    const bonus_agenda_title = document.getElementById("bonus-agenda-title");
-    const bonus_agenda_text_area = document.getElementById("bonus-agenda-text-area");
-    const bonus_agenda_title_text = localStorage.getItem("m1-bonus-agenda-title"); 
-    const bonus_agenda_description_text = localStorage.getItem("m1-bonus-agenda-description");
-    if (bonus_agenda_title_text)
-        bonus_agenda_title.value = bonus_agenda_title_text;
-    if (bonus_agenda_description_text)
-        bonus_agenda_text_area.value = bonus_agenda_description_text;
-    bonus_agenda_title.addEventListener("input", (_) => update_bonus_agenda());
-    bonus_agenda_text_area.addEventListener("input", (_) => update_bonus_agenda());
-    update_bonus_agenda();
+    for (let i = 1; i <= 4; i++)
+    {
+        const other_agenda_title = document.getElementById("other-agenda-title-" + i);
+        const other_agenda_text_area = document.getElementById("other-agenda-text-area-" + i);
+        const other_agenda_title_text = localStorage.getItem("m1-other-agenda-title-" + i);
+        const other_agenda_description_text = localStorage.getItem("m1-other-agenda-description-" + i);
+        if (other_agenda_title_text)
+            other_agenda_title.value = other_agenda_title_text;
+        if (other_agenda_description_text)
+            other_agenda_text_area.value = other_agenda_description_text;
+        other_agenda_title.addEventListener("input", (_) => update_other_agenda());
+        other_agenda_text_area.addEventListener("input", (_) => update_other_agenda());
+    }
+    update_other_agenda();
 
     const blessing_json = localStorage.getItem("m1-blessings");
     if (blessing_json)
@@ -163,7 +191,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     const blessing_checkboxes = document.querySelectorAll(".blessing-checkbox");
-    blessing_checkboxes.forEach(checkbox => {        
+    blessing_checkboxes.forEach(checkbox => {
         checkbox.addEventListener("change", (_) => {check_blessing();});
     });
 
