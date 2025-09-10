@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="mission-3.js"></script>
+    <link rel="stylesheet" href="milligram.min.css" />
+    <link rel="stylesheet" href="style.css" />  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <h1>Mission 3 - Temporal Raid</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>MISSION OBJECTIVES (Raid and Recover)</h3>
+        <p>
+<div style="font-style: italic;">Raid and Recover - Progressive Objective</div>
+From the second battle round onwards, at the end of each player's turn, the player whose turn it is scores VP as follows
+<ul>
+    <li>
+ 10VP for each objective marker that is wholly within their deployment zone.
+    </li>
+    <li>
+ 5VP for each other objective marker that is wholly within their territory.
+    </li>
+</ul>
+Each player can score a maximum of 90VP from this mission objective.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+
+    <h3>Mission Action</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+    <div><span class="action">RECOVER LOOT (ACTION)</span></div>
+    <div><span class="action">STARTS:</span> Your Shooting phase.</div>
+    <div><span class="action">UNITS:</span> One or more units from your Crusade army, each within range of a different objective marker that you control.</div>
+    <div><span class="action">COMPLETES:</span> End of your turn.</div>
+    <div><span class="action">IF COMPLETED:</span>For each unit that completes this Action, you can move one objective marker that unit is within range of up to D6" horizontally if you are the Attacker, or up to 6" horizontally if you are the Defender. When doing so, that objective marker cannot end that move on top of any other objective marker or model, and cannot be moved over the edge of the battlefield.</div>
+      </div>
+    </div>
+<br>
+    <div class="row">
+    <div class="column">
+<h3>Victor Bonus</h3>
+The victor's Crusade force gains 1 additional Requisition point. In addition, at the end of the battle, if the victor has one or more objective markers wholly within their deployment zone, they gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <h3>Hellscape: Staggered Time</h3>
+            <span class="header">Delayed Haste:</span> At the end of your opponent's Movement phase, for each of your units with one or more Warp counters, you can remove one of that unit's Warp counters. If you do, that unit can make a Normal Move of up to D6"    
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="header">Hellscape Action</div>
+    <div><span class="action">SAVING TIME (ACTION)</span></div>
+    <div><span class="action">STARTS:</span> Your Shooting phase.</div>
+    <div><span class="action">UNITS:</span> One or more units from your Crusade army on the battlefield.</div>
+    <div><span class="action">COMPLETES:</span> End of your turn.</div>
+    <div><span class="action">IF COMPLETED:</span> For each unit that completes this Action, give that unit one Warp counter.
+</div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <h3>Warp Event: Widespread, Minor</h3>
+            Start of the 2nd and 3rd battle rounds 1 anomaly, 3D6 each time
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+    <select id="anomaly-set-1">
+        <option value="none">-- 3D6 --</option>
+        <option value="anomaly-3">[3] Daemonic Assault</option>
+        <option value="anomaly-4">[4] Momentary Madness</option>
+        <option value="anomaly-5">[5] Sudden Absence</option>
+        <option value="anomaly-6">[6] Fatal Distraction</option>
+        <option value="anomaly-7">[7] Fell Enervation</option>
+        <option value="anomaly-8">[8] Lost in Confusion</option>
+        <option value="anomaly-9">[9] Dazzling Flares</option>
+        <option value="anomaly-10">[10] Empyric</option>
+        <option value="anomaly-11">[11] Warp Surge</option>
+        <option value="anomaly-12">[12] Step through Space</option>
+        <option value="anomaly-13">[13] Unnatural Speed</option>
+        <option value="anomaly-14">[14] Penetrating Sight</option>
+        <option value="anomaly-15">[15] Borrowed Power</option>
+        <option value="anomaly-16">[16] Shifting Forms</option>
+        <option value="anomaly-17">[17] Frenzied Attacks</option>
+        <option value="anomaly-18">[18] Reality Blinks</option>
+    </select>
+    </div>
+    </div>
+    <div class="anomalies-set">
+        <div class="anomalies anomaly-3">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[3] Daemonic Assault:</div>
+                    For each unit on the battlefield that has one or more Warp counters, that unit suffers D6 mortal wounds for each Warp Counter it has.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-4">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[4] Momentary Madness:</div>
+                     Starting with the Attacker, each player selects one unit from their opponent's Crusade army  that has one or more Warp counters and inflicts D6 mortal wounds to that unit.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-5">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[5] Sudden Absence:</div>
+                     In the final battle round, this result has no effect. Starting with the Attacker, each player selects one unit from their opponent's Crusade army that is on the battlefield that has one or more Warp counters and that is not within Engagement Range of one or more enemy units. That unit is placed into Strategic Reserves
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-6">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[6] Fatal Distraction:</div>
+                    Starting with the Attacker, each player selects one unit from their opponent’s Crusade army on the battlefield that has one or more Warp counters. Until the next time Anomalies would be generated, subtract 1 from the Objective Control characteristics of models in those units.
+                </div>
+            </div>
+        </div>
+
+        <div class="anomalies anomaly-7">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[7] Fell Enervation:</div>
+                    Until the next time Anomalies would be generated, for each unit with one or more Warp counters, subtract 1 from the Toughness characteristics of models in that unit.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-8">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[8] Lost in Confusion:</div>
+                    Starting with the Attacker, each player selects one unit from their Crusade army on the battlefield that has one or more Warp counters: Until the next time Anomalies would be generated, that unit is not eligible to Shoot.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-9">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[9] Dazzling Flares:</div>
+                    Until the next time Anomalies would be generated, for each unit with one or more Warp counters, each time a model in that unit makes a melee attack, subtract 1 from the Hit roll.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-10">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[10] Empyric:</div>
+                    <div>From this Hellscape:</div>
+                     Until you next generate Anomalies, increase the cost of Stratagems used during an opponent's turn by 1CP.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-11">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[11] Warp Surge:</div>
+                    <div>From this mission:</div>
+                    Until the next time Anomalies would be generated, units that Advance are still eligible to perform an Action in that turn.
+                </div>
+            </div>
+        </div>
+         <div class="anomalies anomaly-12">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[12] Step through Space:</div>
+                    <div>From this mission:</div>
+                    Starting with the Attacker, each player selects one unit from their Crusade army that is on the battlefield and has one or more Warp counters. It can make a Normal move of up to D6”.
+                </div>
+            </div>
+        </div>
+         <div class="anomalies anomaly-13">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[13] Unnatural Speed:</div>
+                    <div>From this mission:</div>
+                    Until the next time Anomalies would be generated, for each unit with one or more Warp counters, add 1” to the Move characteristics of models in that unit for each Warp counter that unit has.
+                </div>
+            </div>
+        </div>
+         <div class="anomalies anomaly-14">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[14] Penetrating Sight:</div>
+                    <div>From this mission:</div>
+                    Until the next time Anomalies would be generated, for each unit with one or more Warp counters, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability.
+                </div>
+            </div>
+        </div>
+        <div class="anomalies anomaly-15">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[15] Borrowed Power:</div>
+                    <div>From this mission:</div>
+                    Starting with the Attacker, each player selects one unit from their Crusade army that has one or more Warp counters. Until the next time Anomalies would be generated, weapons equipped by models in those units have the [LETHAL HITS] ability.
+                </div>
+            </div>
+        </div>
+         <div class="anomalies anomaly-16">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[16] Shifting Forms:</div>
+                    <div>From this mission:</div>
+                    Until the next time Anomalies would be generated, for each unit with one or more Warp counters, each time that unit makes a Normal, Advance or Fall Back move, models in that unit can move through models and terrain features. When they do so, those models can move within Engagement range of enemy models, but cannot end that move within Engagement Range of them.
+                </div>
+            </div>
+        </div>
+         <div class="anomalies anomaly-17">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[17] Frenzied Attacks:</div>
+                    <div>From this mission:</div>
+                    Until the next time Anomalies would be generated, for each unit with one or more Warp counters, each time a model in that unit makes an attack, you can re-roll the Hit roll.
+                </div>
+            </div>
+        </div>
+         <div class="anomalies anomaly-18">
+            <div class="row">
+                <div class="column">
+                    <div class="anomaly-header">[18] Reality Blinks:</div>
+                    <div>From this mission:</div>
+                    For each unit on the battlefield that has one or more Warp counters, roll one D6 for each warp counter the unit has. The result is the number of wounds that unit regains, one at a time as follows:
+                    <ul>
+                        <li>If that unit contains one or more models with fewer than their starting number of wounds remaining, select one of those models; that model regains one lost wound.</li>
+                        <li>If all models in that unit have their Starting Strength, one destroyed model is returned to that unit with one wound remaining</li>
+                        <li>If all models in that unit have their starting number of wounds, and that unit is at its Starting Strength, it does not regain any more wounds.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <h3>Tactical Agendas</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+    At the start of the command phase Roll D3 for the table, roll D6 for the tactical agenda. At the end of your turn you can abandon the agenda and roll for a new one in your command phase. Once per battle you can spend 1 CP to reroll your agenda.
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <select id="tactical-agenda-set">
+                <option value="none">-- [D3-D6] Roll D3 then D6 --</option>
+                <option value="tactical-agenda-1-1">[1-1] STORM SITE</option>
+                <option value="tactical-agenda-1-2">[1-2] RECOVER ASSET</option>
+                <option value="tactical-agenda-1-3">[1-3] STALWART DEFENCE</option>
+                <option value="tactical-agenda-1-4">[1-4] TROPHY HUNTER</option>
+                <option value="tactical-agenda-1-5">[1-5] STRATEGIC DOMINANCE</option>
+                <option value="tactical-agenda-1-6">[1-6] I SUPPLY LINES</option>
+                <option value="tactical-agenda-2-1">[2-1] LINEBREAKER</option>
+                <option value="tactical-agenda-2-2">[2-2] OUTFLANKING ENGAGEMENT</option>
+                <option value="tactical-agenda-2-3">[2-3] RAISE THE STANDARD</option>
+                <option value="tactical-agenda-2-4">[2-4] DUEL OF HONOUR</option>
+                <option value="tactical-agenda-2-5">[2-5] MARKED FOR EXTERMINATION</option>
+                <option value="tactical-agenda-2-6">[2-6] CENTER GROUND</option>
+                <option value="tactical-agenda-3-1">[3-1] EXTEND CONTROL</option>
+                <option value="tactical-agenda-3-2">[3-2] DEPLOY EXPLOSIVES</option>
+                <option value="tactical-agenda-3-3">[3-3] GRIM DEFIANCE</option>
+                <option value="tactical-agenda-3-4">[3-4] EMPYRIC MASTERS</option>
+                <option value="tactical-agenda-3-5">[3-5] REVEL IN CARNAGE</option>
+                <option value="tactical-agenda-3-6">[3-6] GUERRILLA FIELDCRAFT</option>
+            </select>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-1-1">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [1-1] STORM SITE
+                </div>
+                At the end of your turn, select one unit from your Crusade army that is within range of an objective marker that you control that was controlled by your opponent at the start of the turn. Your unit gains 2XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-1-2">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [1-2] RECOVER ASSET
+                </div>
+<div><span class="action">RECOVER ASSET (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> One unit from your Crusade army within range of an objective marker that is not within your deployment zone.</div>
+<div><span class="action">COMPLETES:</span> Start of your next turn, or the end of the battle, if you control that objective marker.</div>
+<div><span class="action">IF COMPLETED:</span> The unit that performed the Action gains 1XP and 1CP.</div>
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-1-3">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [1-3] STALWART DEFENCE
+                </div>
+                At the end of your opponent’s turn, if there are no enemy units within your deployment zone, you can select one unit from your Crusade army that is wholly within your deployment zone. Your unit gains 1XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-1-4">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [1-4] TROPHY HUNTER
+                </div>
+                At the end of the turn, select one unit from your Crusade army that destroyed one or more MONSTER, VEHICLE or UNBOUND ADVERSARIES units during that turn. Your unit gains 2XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-1-5">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [1-5] STRATEGIC DOMINANCE
+                </div>
+                At the end of the turn, if you control more objective markers in No Man's Land than your opponent, select up to two units from your Crusade army that are each within range of one or more objective markers in No Man's Land that you control. Each of those units gains 1XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-1-6">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [1-6] I SUPPLY LINES
+                </div>
+<div><span class="action">SECURE OR SABOTAGE (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> One unit from your Crusade army that is either wholly within your deployment zone, or wholly within your opponent's deployment zone.</div>
+<div><span class="action">COMPLETES:</span> End of your turn.</div>
+<div><span class="action">IF COMPLETED:</span> The unit that performed the Action gains 1XP if it is wholly within your deployment zone, or 2XP if it is wholly within your opponent's deployment zone.</div>
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-2-1">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [2-1] LINEBREAKER
+                </div>
+                At the end of your turn, select one unit from your Crusade army (excluding AIRCRAFT and Battle-shocked units) that is wholly within your opponent's deployment zone. That unit gains 1XP. If that unit is also wholly within 6" of your opponent’ s battlefield edge, that unit gains 2XP instead.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-2-2">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [2-2] OUTFLANKING ENGAGEMENT
+                </div>
+                At the end of your turn, select two units from your Crusade army (excluding Battle-shocked units). Each unit must be wholly within 6" of a different battlefield edge (excluding your or your opponent's battlefield edge). Each of the selected units gains 1XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-2-3">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [2-3] RAISE THE STANDARD
+                </div>
+<div><span class="action">RAISE STANDARD (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> Select up to 3 units from your Crusade army within range of an objective marker. Each unit must be within range of a different objective marker.</div>
+<div><span class="action">COMPLETES:</span> End of your turn, if you control that objective marker.</div>
+<div><span class="action">IF COMPLETED:</span> Each unit that performed the Action gains 1XP.</div>
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-2-4">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [2-4] DUEL OF HONOUR
+                </div>
+                At the end of the turn, select one unit from your Crusade army that destroyed one or more CHARACTER units during that turn. Your unit scores 1XP (your unit scores 2XP instead if one or more of those destroyed CHARACTER units was destroyed by a melee attack).
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-2-5">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [2-5] MARKED FOR EXTERMINATION
+                </div>
+                <p>When this Tactical Agenda is generated, your opponent must select two units from their Crusade army that are on the battlefield (if there are less than two units in their Crusade army on the battlefield, they select one unit instead, and if there are none, then this Tactical agenda is abandoned and you generate a new one).</p>
+                <p>At the end of the turn, if one or more of the selected enemy units have been destroyed, select one unit from your Crusade army that destroyed one or more of those enemy units this turn; that unit gains 2XP.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-2-6">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [2-6] CENTER GROUND
+                </div>
+                At the end of your turn, select one unit from your Crusade army (excluding AIRCRAFT and Battle-shocked units) that is wholly within 3" of the centre of the battlefield. That unit gains 1XP (that unit gains 2XP instead if there are no enemy units within 6" of the centre of the battlefield).
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-3-1">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [3-1] EXTEND CONTROL
+                </div>
+                At the end of your turn, select one unit from your Crusade army that is within range of an objective marker that you control that is within your deployment zone, and select one unit from your Crusade army that is within range of an objective marker that you control that is within No Man’s Land. Each of those units gains 1XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-3-2">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [3-2] DEPLOY EXPLOSIVES
+                </div>
+<div><span class="action">DEPLOY EXPLOSIVES (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> One unit from your Crusade army that is either within 3" of the centre of the battlefield or wholly within your opponent's deployment zone.</div>
+<div><span class="action">COMPLETES:</span> End of your turn.</div>
+<div><span class="action">IF COMPLETED:</span> The unit that performed the Action gains 1XP if it is within 3" of the centre of the battlefield, or 2XP if it is wholly within your opponent's deployment zone.</div>
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-3-3">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [3-3] GRIM DEFIANCE
+                </div>
+                When this Tactical Agenda is generated, your opponent must select two units from your Crusade army that are on the battlefield (if there are less than two units in your Crusade army on the battlefield, select one unit instead, and if there are none, then this Tactical Agenda is abandoned and you generate a new one). At the end of your opponent's turn, each of the selected units that is on the battlefield, is not Battle-shocked and has not made a Fall Back move while this Tactical Agenda has been active, gains 1XP. If you cannot achieve this Tactical Agenda (e.g. the selected units are destroyed, Fell Back and/or became Battle-shocked), it is abandoned.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-3-4">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [3-4] EMPYRIC MASTERS
+                </div>
+                At the end of the turn, select one unit from your Crusade army that gained one or more Warp counters this turn. That unit gains 1XP.
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-3-5">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [3-5] REVEL IN CARNAGE
+                </div>
+                At the end of the turn, select one unit from your Crusade army that destroyed one or more enemy units. Your unit scores 1XP for each enemy unit it destroyed this turn (to a maximum of 3XP).
+            </div>
+        </div>
+    </div>
+    <div class="tactical-agenda tactical-agenda-3-6">
+        <div class="row">
+            <div class="column">
+                <div class="tactical-agenda-header">
+                    [3-6] GUERRILLA FIELDCRAFT
+                </div>
+<div><span class="action">GUERRILLA FIELDCRAFT (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> One unit from your Crusade army that is within a terrain feature and not within your deployment zone.</div>
+<div><span class="action">COMPLETES:</span> End of your opponent's turn or the end of the battle, if your unit is on the battlefield.</div>
+<div><span class="action">IF COMPLETED:</span> That unit gains 2XP.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Agenda Reminders</h3>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-assassinate-reminder">
+        <div class="row">
+            <div class="column">
+                <div  class="agenda-header"> Assassinate</div>
+                Each time a model from your Crusade army destroys an enemy CHARACTER unit, that model’s unit gains 2XP. Each time a model from your Crusade army destroys an enemy WARLORD, EPIC HERO or UNBOUND ADVERSARIES CHARACTER unit, that model's unit gains an additional 2XP.
+                <br>
+                At the end of the battle, if the enemy WARLORD is destroyed, you gain 1 strategic point.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-lines-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header"> Lines of Defence</div>
+                At the end of the battle, you can select either two or three units from your Crusade army (excluding AIRCRAFT and Battle-shocked units). One of these units must be wholly within your deployment zone, one must be wholly within your opponent's deployment zone, and - if you are selecting three units - the third must be wholly within 12" of the centre of the battlefield. If you cannot select two units, then you cannot achieve this Agenda. Each selected unit gains 2XP.
+                <br>
+                At the end of the battle, if units from your Crusade army gained XP via this Agenda and you were able to select three units that satisfied the conditions above, you gain 1 strategic point.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-warp-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header">Warp Rites</div>
+                At the start of the battle, no objective markers have Warp rites completed.
+    <div><span class="action">WARP RITES (ACTION)</span></div>
+    <div><span class="action">STARTS:</span> Your Shooting phase.</div>
+    <div><span class="action">UNITS:</span> One unit from your Crusade army within range of an objective marker that has not had Warp rites completed.</div>
+    <div><span class="action">COMPLETES:</span> End of your turn, if you control that objective marker.</div>
+    <div><span class="action">IF COMPLETED:</span> That objective marker has had Warp rites completed and the unit that performed the Action gains 1 Warp counter and 2XP.</div>
+    At the end of the battle, if three or more objective markers on the battlefield have had Warp rites completed by your Crusade army, you gain 1 strategic point. A unit cannot gain more than 6XP per battle from this Agenda.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-cleanse-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header">Cleanse and Purge</div>
+                Each time a unit from your Crusade army destroys an UNBOUND ADVERSARIES unit and/or an enemy unit that has one or more Warp counters, that unit gains 1XP (if your unit had no Warp counters when it destroyed that enemy unit, it gains 2XP instead). A unit cannot gain more than 2XP per battle from this Agenda. At the end of the battle, if 5 or more units from your Crusade army gained XP from this Agenda, you gain 1 strategic point.
+            </div>
+        </div>
+    </div>
+    <div class="agenda-reminder agenda-sacrificial-reminder">
+        <div class="row">
+            <div class="column">
+                <div class="agenda-header">Sacrificial Defiance</div>
+                At the start of the battle, your opponent selects up to two different objective markers on the battlefield. At the end of the battle, select up to one of those objective markers that you control and up to three units from your Crusade army that are within range of that objective marker. Each of those units gains 2XP.
+            </div>
+        </div>
+    </div>
+
+    <div class="other-agenda-reminder-group">
+        <div class="row">
+            <div class="column">
+                <h3>Other Agenda Reminders</h3>
+                <div class="other-agenda-reminder" id="other-agenda-reminder-1">
+                    <div class="agenda-header other-agenda-reminder-header"></div>
+                    <div class="other-agenda-reminder-description"></div>
+                </div>
+                <div class="other-agenda-reminder" id="other-agenda-reminder-2">
+                    <div class="agenda-header other-agenda-reminder-header"></div>
+                    <div class="other-agenda-reminder-description"></div>
+                </div>
+                <div class="other-agenda-reminder" id="other-agenda-reminder-3">
+                    <div class="agenda-header other-agenda-reminder-header"></div>
+                    <div class="other-agenda-reminder-description"></div>
+                </div>
+                <div class="other-agenda-reminder" id="other-agenda-reminder-4">
+                    <div class="agenda-header other-agenda-reminder-header"></div>
+                    <div class="other-agenda-reminder-description"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row blessing-reminder-header">
+        <div class="column">
+            <h3>Blessing Reminders</h3>
+        </div>
+    </div>
+
+    <div class="row blessing-reminder blessing-strategist-reminder">
+        <div class="column">
+            <div class="blessing-header"> Strategist</div>
+            You start the battle with 2CP.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-honour-reminder">
+        <div class="column">
+            <div class="blessing-header">For Honour and Glory</div>
+            Select one additional Armageddon Agenda this battle.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-tempered-reminder">
+        <div class="column">
+            <div class="blessing-header">Tempered in the Fires of War</div>
+            At the end of the battle, each unit from your Crusade Army that is not destroyed gains 2XP.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-sorcerous-reminder">
+        <div class="column">
+            <div class="blessing-header">Sorcerous Might</div>
+            Each time you select a Psyker unit from your Crusade Army to shoot or fight, if that unit has one or more Warp counters, you can remove one of them.  If you do, until the end of the phase, each time a model in that unit makes an attack with a Psychic weapon, add 1 to the Wound Roll.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-front-reminder">
+        <div class="column">
+            <div class="blessing-header">Front-Line Operative</div>
+            Battleline and Psyker units in your Crusade Army that perform an Action are still eligible to shoot in that turn (but cannot start to perform another Action in that turn.)
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-storm-reminder">
+        <div class="column">
+            <div class="blessing-header">Storm-Speaker</div>
+            Once per battle, whenever you generate Anomalies, if your Warlord is on the battlefield, you can reroll one or more of the results.  If your Warlord is a Psyker, you can do this up to twice per battle.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-daemon-reminder">
+        <div class="column">
+            <div class="blessing-header">Daemon Hunters</div>
+            Each time a model in your Crusade Army makes an attack that targets an Unbound Adversaries unit, you can re-roll the hit roll.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-stygian-reminder">
+        <div class="column">
+            <div class="blessing-header">Stygian Darkness</div>
+            Until the start of the second battle round, each unit from your Crusade Army has the Stealth ability.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-victor-reminder">
+        <div class="column">
+            <div class="blessing-header">To the Victor the Spoils</div>
+            If you are the Victor in this battle, you gain 1RP.  If you are the Victor, and the difference in Crusade Points between your Crusade Army and your opponent’s Crusade Army is 10 or more, you gain 2RP instead.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-ready-reminder">
+        <div class="column">
+            <div class="blessing-header">Ready and Waiting</div>
+            Until the start of the second battle round, each time a ranged attack is made against one of your units, if that unit is wholly within your deployment zone, it receives Benefit of Cover against that attack.  In addition, once per battle, you can target one Battleline unit in your Crusade Army with the Fire Overwatch stratagem for 0CP.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-strategic-reminder">
+        <div class="column">
+            <div class="blessing-header">Strategic Gambit</div>
+            At the end of the battle, roll 1D6.  If you were the Victor, add 3 to the result.  On a 4+, you gain 1 Strategic Point.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-faith-reminder">
+        <div class="column">
+            <div class="blessing-header">Faith and Duty (Imperium)</div>
+            At the start of the battle, select one objective marker on the battlefield.  While a model from your Crusade Army is within range of that objective marker, unless that unit is Battle-Shocked, add 1 to that model’s Objective Control characteristic.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-slaves-reminder">
+        <div class="column">
+            <div class="blessing-header">Slaves to Darkness (Chaos)</div>
+            Once per battle, at the start of the Unbound Adversaries turn, you can select one Unbound Adversaries unit on the battlefield.  Until the end of the turn, that unit treats the units in your Crusade Army as friendly units.
+        </div>
+    </div>
+    <div class="row blessing-reminder blessing-dread-reminder">
+        <div class="column">
+            <div class="blessing-header">Dread Raiders (Everyone Else)</div>
+            After both players have deployed their armies, you can select up to two units from your Crusade Army and redeploy them.  When doing so, those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <a href="post-mission.html" class="header">Post mission player guide</a> - after the mission is over, use this guide to copy text into Administratum.
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+        <h3>Unbound Adversaries:</h3>
+        <p>
+            After the Deploy Crusade Armies step, the Defender sets up three UNBOUND ADVERSARIES units (Power Level 2) in the Unbound Adversary deployment zone.
+        </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <select id="datasheet-selector-1" class="datasheet-selector">
+                <option value="none">-- Roll D6 for first unbound deployment zone --</option>
+                <option value="datasheet-abomination">[1-3] - 4 Abominations</option>
+                <option value="datasheet-daemonic-beast">[4-6] - 3 Daemonic Beasts</option>   
+            </select>
+            </div>
+            <div class="column">
+            <select id="datasheet-selector-2" class="datasheet-selector">
+                <option value="none">-- Roll D6 for second ubound deployment zone --</option>
+                <option value="datasheet-abomination">[1-3] - 4 Abominations</option>
+                <option value="datasheet-daemonic-beast">[4-6] - 3 Daemonic Beasts</option>
+            </select>
+            <select id="datasheet-selector-3" class="datasheet-selector">
+                <option value="none">-- Roll D6 for second ubound deployment zone --</option>
+                <option value="datasheet-abomination">[1-3] - 4 Abominations</option>
+                <option value="datasheet-daemonic-beast">[4-6] - 3 Daemonic Beasts</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <input type=checkbox id="datasheet-show-all-cb" value="checked"><label for="datasheet-show-all-cb" class="label-inline">Show all datasheets</label>
+        </div>
+    </div>
+    <div class="row datasheet datasheet-lesser-daemons" >
+        <div class="column">
+            <div class="border" style="border: 2px solid black;padding: 2px;">
+                <div>Lesser Daemons - 32mm (1.25") round base</div>
+            <table>
+                <thead>
+                    <tr><th style="width:2em;">M</th><th style="width:2em;">T</th><th style="width:2em;">SV</th><th style="width:2em;">W</th><th style="width:2em;">LD</th><th style="width:2em;">OC</th><th style="width: auto;">5+ Invulnerable Save</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>6"</td><td>4</td><td>7+</td><td>1</td><td>7+</td><td>1</td><td>Unit Composistion: 10 Lesser Daemons</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead><th>Weapons</th><th>Keywords</th><th style="width:5em;">Range</th><th style="width:2em;">A</th><th style="width:2em;">WS</th><th style="width:2em;">S</th><th style="width:2em;">AP</th><th style="width:2em;">D</th></thead>
+                <tbody><td>Daemonic weapon</td><td></td><td>Melee</td><td>3</td><td>3+</td><td>4</td><td>-1</td><td>1</td></tbody>
+            </table>
+            <div>
+                Keywords: Unbound Adversaries, Infantry, Chaos, Daemon, Lesser Daemon
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row datasheet datasheet-abomination" >
+        <div class="column">
+            <div class="border" style="border: 2px solid black;padding: 2px;">
+                <div>Abomination - 50mm (2") round base</div>
+            <table>
+                <thead>
+                    <tr><th style="width:2em;">M</th><th style="width:2em;">T</th><th style="width:2em;">SV</th><th style="width:2em;">W</th><th style="width:2em;">LD</th><th style="width:2em;">OC</th><th style="width: auto;">&nbsp;</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>10"</td><td>5</td><td>4+</td><td>4</td><td>7+</td><td>1</td><td>Unit Composistion: 2-4 Abominations</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead><th>Weapons</th><th>Keywords</th><th style="width:5em;">Range</th><th style="width:2em;">A</th><th style="width:2em;">WS</th><th style="width:2em;">S</th><th style="width:2em;">AP</th><th style="width:2em;">D</th></thead>
+                <tbody><td>Hideous mutations</td><td></td><td>Melee</td><td>D6+2</td><td>4+</td><td>5</td><td>-1</td><td>2</td></tbody>
+            </table>
+            <div>
+                Keywords: Unbound Adversaries, Beast, Chaos, Abomination
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row datasheet datasheet-daemonic-beast" >
+        <div class="column">
+            <div class="border" style="border: 2px solid black;padding: 2px;">
+            <div>Daemonic Beasts - 90mm (3.5"x 2") oval base</div>
+            <table>
+                <thead>
+                    <tr><th style="width:2em;">M</th><th style="width:2em;">T</th><th style="width:2em;">SV</th><th style="width:2em;">W</th><th style="width:2em;">LD</th><th style="width:2em;">OC</th><th style="width: auto;">5+ Invulnerable Save</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>10"</td><td>6</td><td>7+</td><td>4</td><td>7+</td><td>2</td><td>Unit Composistion: 3-6 Daemonic Beasts</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead><th>Weapons</th><th>Keywords</th><th style="width:5em;">Range</th><th style="width:2em;">A</th><th style="width:2em;">WS</th><th style="width:2em;">S</th><th style="width:2em;">AP</th><th style="width:2em;">D</th></thead>
+                <tbody><td>Horns and talons</td><td></td><td>Melee</td><td>4</td><td>3+</td><td>6</td><td>-2</td><td>2</td></tbody>
+            </table>
+            <div>Keywords: Unbound Adversaries, Beast, Chaos, Daemon, Daemonic Beasts</div>
+            </div>
+        </div>
+    </div>
+    <div class="row datasheet datasheet-greater-daemon" >
+        <div class="column">
+            <div class="border" style="border: 2px solid black;padding: 2px;">
+            <div>Greater Daemon - 120mm x 92mm (4.75"x 3-5/8") oval base</div>
+            <table>
+                <thead>
+                    <tr><th style="width:2em;">M</th><th style="width:2em;">T</th><th style="width:2em;">SV</th><th style="width:2em;">W</th><th style="width:2em;">LD</th><th style="width:2em;">OC</th><th style="width: auto;">4+ Invulnerable Save</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>12"</td><td>10</td><td>5+</td><td>18</td><td>6+</td><td>5</td><td>Deadly Demise: D6<br>Unit Composistion: 1 Daemonic Beasts</td></tr>
+                </tbody>
+            </table>
+            <table>
+                <thead><tr><th>Weapons</th><th>Keywords</th><th style="width:5em;">Range</th><th style="width:2em;">A</th><th style="width:2em;">WS</th><th style="width:2em;">S</th><th style="width:2em;">AP</th><th style="width:2em;">D</th></tr></thead>
+                <tbody>
+                    <tr><td>Infernal Scream</td><td>[Ignores Cover, Torrent]</td><td>12"</td><td>D6</td><td>N/A</td><td>5</td><td>-1</td><td>1</td></tr>
+                    <tr><td>=&gt; Fell Weapon - strike</td>&nbsp;<td><td>Melee</td><td>6</td><td>2+</td><td>10</td><td>-2</td><td>D6+1</td></tr>
+                    <tr><td>=&gt; Fell Weapon - sweep</td>&nbsp;<td><td>Melee</td><td>12</td><td>2+</td><td>7</td><td>-1</td><td>1</td></tr>
+                </tbody>
+            </table>
+            <div>Keywords: Unbound Adversaries, Monster, Character, Chaos, Daemon, Greater Daemon</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column column-80 column-offset-10">
+
+<table>
+<tbody>
+<tr><td colspan="3" class="header">POWER LEVEL 1</td></tr>
+<tr><td>( [D6] 1-3 ) 10 Lesser Daemons</td><td>( [D6] 4-6 ) 2 Abominations</td></tr>
+
+<tr><td colspan="3" class="header">POWER LEVEL 2</td></tr>
+<tr><td>( [D6] 1-3 ) 4 Abominations</td><td>( [D6] 4-6 ) 3 Daemonic Beasts</td></tr>
+
+<tr><td colspan="3" class="header">POWER LEVEL 3</td></tr>
+<tr><td>( [D6] 1-3 ) 6 Daemonic Beasts</td><td>( [D6] 4-6 ) 1 Greater Daemon</td></tr>
+
+</tbody>
+</table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            There is an Unbound Adversaries turn at the start of each battle round which happens after other 'start of the battle round' rules are resolved but before the first player's turn.
+An Unbound Adversaries turn consists of a Movement phase, a Shooting phase, a Charge phase and a Fight phase. Where a rule refers to such a phase, to an opponent's Movement phase, Shooting phase, Charge phase or Fight phase, or to an opponent's turn, it also applies to the corresponding Unbound Adversaries phase or turn. For example, the Fire Overwatch Stratagem can be used in your opponent's Movement or Charge phase, and so can also be used in the Unbound Adversaries Movement or Charge phase.
+If at any point, while following these rules, there is more than one way to resolve them (for example, if there are two enemy units that are the same distance from an UNBOUND ADVERSARIES unit, or if an UNBOUND ADVERSARIES model could target more than one unit in the Fight phase), the player whose Crusade army has a higher total of Warp counters decides for the rest of the phase. If there is a tie, players roll-off and the winner decides for the rest of the phase.
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="header">
+                Movement Phase
+            </div>
+            In the Unbound Adversaries Movement phase, each UNBOUND ADVERSARIES unit that is not within Engagement Range of one or more enemy units makes a Normal Move as follows:
+            <ul>
+                <li>That UNBOUND ADVERSARIES unit must end that move as close as possible to the closest enemy unit.</li>
+                <li>Each model in that unit moves as close as possible to that enemy unit.</li>
+            </ul>
+            There is no Reinforcements step in an Unbound Adversaries Movement phase
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="header">
+                Shooting Phase
+            </div>
+            In the Unbound Adversaries Shooting phase, each UNBOUND ADVERSARIES unit that is eligible to shoot does so. When it does, each ranged attack made by a model in that unit must target the closest eligible target.
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="header">
+                Charge Phase
+            </div>
+                In the Unbound Adversaries Charge phase, each UNBOUND ADVERSARIES unit that is within 12" of one or more enemy units and is not within Engagement Range of one or more enemy units declares a charge that targets the closest enemy unit. When resolving an UNBOUND ADVERSARIES unit's charge move:
+                <ul>
+                    <li>That UNBOUND ADVERSARIES unit must end that move as close as possible to the closest enemy unit.</li>
+                    <li>Each model in that unit moves as close as possible to that enemy unit.</li>
+                </ul>
+       </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="header">
+                Fight Phase
+            </div>
+    In the Unbound Adversaries Fight phase, each UNBOUND ADVERSARIES unit that is eligible to Fight does so.
+    <br>
+    An UNBOUND ADVERSARIES unit will only make a Consolidation move if it can end that move within Engagement Range of one or more enemy units.
+    <br>
+    UNBOUND ADVERSARIES units are the only units eligible to fight in the Unbound Adversaries fight phase, and they are not eligible to fight in any other Fight phase.
+
+       </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Setup</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Map</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="img/map-mission-3.jpg" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="img/map-key.jpg" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Battle Orders</h2>
+            <div class="battle-order-header">1-3 have been skipped</div>
+            <div class="battle-order-header">[4] Determine Attacker Defender</div>
+            It may be pre assigned per match, if not, roll off and winner decides
+            <div class="battle-order-header">[5] Read mission</div>
+            Some mission objectives are Progressive some are End Game. Progressive objectives are scored during play, end game objectives are scored at the end of the game.
+            <div class="battle-order-header">[6] Place Objective Markers</div>
+            Check the mission map and mission rules
+            <div class="battle-order-header">[7] Create battlefield</div>
+            Setup up terrain according to core rules. Terrain features should not be set up with any impassable sections (such as the walls of a ruin) within 1" of any objective markers.
+            <div class="battle-order-header">[8] Purchase Requisitions</div>
+            <div class="battle-order-header">[9] Select Agendas</div>
+            Each player secretly selects two Agendas for the battle and writes them down. One of them can be tactical, tactical Agendas change during battle. Then they are revealed
+            <div class="battle-order-header">[10] Select Crusade Blessings</div>
+            Compare Crusade points, a difference of 5 or more, the Army with lower total Crusade points is the underdog and gets Crusade Blessing.See Crusade Blessings for claiming Universal or Faction blessings
+            <div class="battle-order-header">[11] Declare Battle Formations</div>
+            In the order stated below, both players now secretly note down:
+            <ol>
+                <li>Which of their Leader units will start the battle attached (they must specify which Leader unit is attached to which Bodyguard unit for proper XP assignment).</li>
+                <li>Which of their units will start the battle embarked within TRANSPORT models (they must specify which units are embarked on which models).</li>
+                <li>Which of their units will start in Reserves (including Strategic Reserves).</li>
+            </ol>
+            <div>When both players have done so, they declare their selections to their opponent.</div>
+            <div>In Armageddon missions, Reserves units cannot arrive during the first battle round, and any Strategic Reserves or Reserves unit that has not arrived on the battlefield by the end of the third battle round counts as having been destroyed, as do any units embarked within them (this does not apply to units that are placed into Strategic Reserves after the first battle round has started).</div>
+            <div class="battle-order-header">[12] Deploy Crusade Armies</div>
+            <div>Players now alternate setting up their remaining units one at a time, starting with the Defender. Each time a player sets up a TITANIC unit when it is their turn to set up a unit, they skip their next turn to set up a unit. A player's units must be set up wholly within their deployment zone - the Attacker's and the Defender's deployment zones are shown on the deployment map of each mission. If one player finishes deploying all their units, their opponent then deploys the remainder of their units.</div>
+            <div>UNBOUND ADVERSARIES</div>
+            <div>If your mission is using the rules for Unbound Adversaries, the mission rules may specify that these are set up on the battlefield now.</div>
+            <div class="battle-order-header">[13] Redeploy Units</div>
+            Some rules allow players to redeploy certain units after both armies are deployed. Unless otherwise stated, such rules are resolved in this step. Players alternate resolving any such rules, starting with the Attacker.
+            <div class="battle-order-header">[14] Determine First Turn </div>
+            Unless the mission briefing says otherwise, players roll off and the winner takes the first turn.
+            <div class="battle-order-header">[15] Resolve Pre-Battle Rules</div>
+            Players alternate resolving any pre-battle rules units from their Crusade army may have, starting with the player who will take the first turn.
+            <div class="battle-order-header">[16] Set Warp Events</div>
+            Unless the mission rules state the scale and intensity of the Warp Events, the players now determine these as described on page 98.
+            <div class="battle-order-header">[17] Begin The Battle</div>
+            The first battle round begins. Players continue to resolve battle rounds until the battle ends.
+            <div class="battle-order-header">[18] End The Battle</div>
+            The battle ends after five battle rounds have been completed. If one player has no models remaining in their Crusade army at the start of their turn, the other player may continue to play out their turns until the battle ends.
+            <div class="battle-order-header">[19] Determine The Victor</div>
+            <div>At the end of the battle, the player with the most Victory points is the winner. If players are tied, the battle is a draw. If every model in a player's Crusade army is painted to a Battle Ready standard, that player is awarded a bonus 10 Victory points.</div>
+            <div>The victor of a mission can then claim the Victor bonus listed on that mission. If the game is a draw, neither player can claim the victor bonus. If you are playing an Armageddon Campaign, you should inform the Campaign Master of the result of the battle so that your alliance can be awarded the appropriate strategic points, as described on page 73.</div>
+            <div class="battle-order-header">[20] Update Crusade Cards</div>
+            The players must now update their Crusade cards for all the units they used in the battle by taking Out of Action tests for any that were destroyed, and selecting a unit to be Marked for Greatness (selected unit gains 3XP). If this results in any units gaining a rank, before the next battle, they can gain Battle Honours as described on page 60.
+            <div class="battle-order-header">[21] Update Order Of Battle</div>
+            Increase your Battle tally and Requisition points by 1, and make any notes that you wish to record following your battle. If you wish to add any units to your Crusade force or spend any Requisition points, do so and update your Order of Battle accordingly before your next battle,
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Fixed Agendas - Selection</h2>
+            You can select your fixed agendas here. Your selected agendas will show up at the top of the page under the tactical agendas.
+            These are the fixed agenda's. Generally you will pick two. One of them can be tactical, in which case you would use the tactical agenda selector above. There is also a crusade blessing
+            that lets you pick a third. The text box is for the bonus agenda you get from your codex's crusade rules campaign.
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-assassinate" value=""><label for="agenda-assassinate" class="label-inline agenda-header"> Assassinate</label> - Each time a model from your Crusade army destroys an enemy CHARACTER unit, that model’s unit gains 2XP. Each time a model from your Crusade army destroys an enemy WARLORD, EPIC HERO or UNBOUND ADVERSARIES CHARACTER unit, that model's unit gains an additional 2XP.
+            <br>
+            At the end of the battle, if the enemy WARLORD is destroyed, you gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-lines" value=""><label for="agenda-lines" class="label-inline agenda-header"> Lines of Defence</label> - At the end of the battle, you can select either two or three units from your Crusade army (excluding AIRCRAFT and Battle-shocked units). One of these units must be wholly within your deployment zone, one must be wholly within your opponent's deployment zone, and - if you are selecting three units - the third must be wholly within 12" of the centre of the battlefield. If you cannot select two units, then you cannot achieve this Agenda. Each selected unit gains 2XP.
+            <br>
+            At the end of the battle, if units from your Crusade army gained XP via this Agenda and you were able to select three units that satisfied the conditions above, you gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-warp" value=""><label for="agenda-warp" class="label-inline agenda-header">Warp Rites</label> - At the start of the battle, no objective markers have Warp rites completed.
+<div><span class="action">WARP RITES (ACTION)</span></div>
+<div><span class="action">STARTS:</span> Your Shooting phase.</div>
+<div><span class="action">UNITS:</span> One unit from your Crusade army within range of an objective marker that has not had Warp rites completed.</div>
+<div><span class="action">COMPLETES:</span> End of your turn, if you control that objective marker.</div>
+<div><span class="action">IF COMPLETED:</span> That objective marker has had Warp rites completed and the unit that performed the Action gains 1 Warp counter and 2XP.</div>
+At the end of the battle, if three or more objective markers on the battlefield have had Warp rites completed by your Crusade army, you gain 1 strategic point. A unit cannot gain more than 6XP per battle from this Agenda.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-cleanse" value=""><label for="agenda-cleanse" class="label-inline agenda-header">Cleanse and Purge</label> - Each time a unit from your Crusade army destroys an UNBOUND ADVERSARIES unit and/or an enemy unit that has one or more Warp counters, that unit gains 1XP (if your unit had no Warp counters when it destroyed that enemy unit, it gains 2XP instead). A unit cannot gain more than 2XP per battle from this Agenda. At the end of the battle, if 5 or more units from your Crusade army gained XP from this Agenda, you gain 1 strategic point.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="agenda-checkbox" id="agenda-sacrificial" value=""><label for="agenda-sacrificial" class="label-inline agenda-header">Sacrificial Defiance</label> - At the start of the battle, your opponent selects up to two different objective markers on the battlefield. At the end of the battle, select up to one of those objective markers that you control and up to three units from your Crusade army that are within range of that objective marker. Each of those units gains 2XP.
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="agenda-header">Codex and/or Other Agendas</div>
+            Input Army Codex's Agendas instead of Armegeddon Agendas as part of your two agendas and/or input extra agendas due to a Codex's special Crusade rules or Crusade blessings (clear both text and text area fields to hide)
+        </div>
+    </div>
+    <div class="other-agenda" id="other-agenda-1"></div>
+    <div class="row">
+        <div class="column">
+           <input class="other-agenda-title" id="other-agenda-title-1" placeholder="Write down the title of your agenda...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <textarea class="other-agenda-text-area" id="other-agenda-text-area-1" placeholder="Write down the description of your agenda here if you have one..."></textarea>
+        </div>
+    </div>
+    </div>
+    <div class="other-agenda" id="other-agenda-2"></div>
+    <div class="row">
+        <div class="column">
+           <input class="other-agenda-title" id="other-agenda-title-2" placeholder="Write down the title of your agenda...">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <textarea class="other-agenda-text-area" id="other-agenda-text-area-2" placeholder="Write down the description of your agenda here if you have one..."></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+           <input class="other-agenda-title" id="other-agenda-title-3" placeholder="Write down the title of your agenda...">
+        </div>
+    </div>
+    </div>
+    <div class="other-agenda" id="other-agenda-3"></div>
+    <div class="row">
+        <div class="column">
+            <textarea class="other-agenda-text-area" id="other-agenda-text-area-3" placeholder="Write down the description of your agenda here if you have one..."></textarea>
+        </div>
+    </div>
+    </div>
+    <div class="other-agenda" id="other-agenda-3"></div>
+    <div class="row other">
+        <div class="column">
+           <input class="other-agenda-title" id="other-agenda-title-4" placeholder="Write down the title of your agenda...">
+        </div>
+    </div>
+    </div>
+    <div class="other-agenda" id="other-agenda-4">
+    <div class="row">
+        <div class="column">
+            <textarea class="other-agenda-text-area" id="other-agenda-text-area-4" placeholder="Write down the description of your agenda here if you have one..."></textarea>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <h2>Crusade Blessings - Selection</h2>
+            Crusade Blessings selected here will show up under Crusade Blessing Reminders at the top of the page.
+            The Crusade Points totals of the two mustered forces are compared.  The side with less Crusade Points is the Underdog, and can select a number of Crusade Blessings to turn the tide.  The Underdog cannot select the same blessing more than once.
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <table>
+                <thead><th>Difference in Crusade Points</th><th>Number of Blessing Choosable</th></thead>
+                <tbody>
+                    <tr><td>0-4</td><td>0</td></tr>
+                    <tr><td>5-9</td><td>1</td></tr>
+                    <tr><td>10-19</td><td>2</td></tr>
+                    <tr><td>20+</td><td>4</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-strategist" value="strategist"><label for="blessing-strategist" class="label-inline blessing-header"> Strategist</label> - You start the battle with 2CP.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-honour" value="honour"><label for="blessing-honour" class="label-inline blessing-header"> For Honour and Glory</label>- Select one additional Armageddon Agenda this battle.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-tempered" value="tempered"><label for="blessing-tempered" class="label-inline blessing-header"> Tempered in the Fires of War</label> - At the end of the battle, each unit from your Crusade Army that is not destroyed gains 2XP.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-sorcerous" value="sorcerous"><label for="blessing-sorcerous" class="label-inline blessing-header"> Sorcerous Might</label> - Each time you select a Psyker unit from your Crusade Army to shoot or fight, if that unit has one or more Warp counters, you can remove one of them.  If you do, until the end of the phase, each time a model in that unit makes an attack with a Psychic weapon, add 1 to the Wound Roll.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-front" value="front"><label for="blessing-front" class="label-inline blessing-header"> Front-Line Operative</label> - Battleline and Psyker units in your Crusade Army that perform an Action are still eligible to shoot in that turn (but cannot start to perform another Action in that turn.)
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-storm" value="storm"><label for="blessing-storm" class="label-inline blessing-header"> Storm-Speaker</label> - Once per battle, whenever you generate Anomalies, if your Warlord is on the battlefield, you can reroll one or more of the results.  If your Warlord is a Psyker, you can do this up to twice per battle.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-daemon" value="daemon"><label for="blessing-daemon" class="label-inline blessing-header"> Daemon Hunters</label> - Each time a model in your Crusade Army makes an attack that targets an Unbound Adversaries unit, you can re-roll the hit roll.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-stygian" value="stygian"><label for="blessing-stygian" class="label-inline blessing-header"> Stygian Darkness</label> - Until the start of the second battle round, each unit from your Crusade Army has the Stealth ability.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-victor" value="victor"><label for="blessing-victor" class="label-inline blessing-header"> To the Victor the Spoils</label> - If you are the Victor in this battle, you gain 1RP.  If you are the Victor, and the difference in Crusade Points between your Crusade Army and your opponent’s Crusade Army is 10 or more, you gain 2RP instead.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-ready" value="ready"><label for="blessing-ready" class="label-inline blessing-header"> Ready and Waiting</label> - Until the start of the second battle round, each time a ranged attack is made against one of your units, if that unit is wholly within your deployment zone, it receives Benefit of Cover against that attack.  In addition, once per battle, you can target one Battleline unit in your Crusade Army with the Fire Overwatch stratagem for 0CP.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-strategic" value="strategic"><label for="blessing-strategic" class="label-inline blessing-header"> Strategic Gambit</label> - At the end of the battle, roll 1D6.  If you were the Victor, add 3 to the result.  On a 4+, you gain 1 Strategic Point.
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>Faction Specific Crusade Blessings</h3>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-faith" value="faith"><label for="blessing-faith" class="label-inline blessing-header"> Faith and Duty (Imperium)</label> - All Crusade Army models must have the Imperium keyword
+At the start of the battle, select one objective marker on the battlefield.  While a model from your Crusade Army is within range of that objective marker, unless that unit is Battle-Shocked, add 1 to that model’s Objective Control characteristic.
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-slaves" value="slaves"><label for="blessing-slaves" class="label-inline blessing-header"> Slaves to Darkness (Chaos)</label> - All Crusade Army models must have the Chaos keyword
+Once per battle, at the start of the Unbound Adversaries turn, you can select one Unbound Adversaries unit on the battlefield.  Until the end of the turn, that unit treats the units in your Crusade Army as friendly units.
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="checkbox" class="blessing-checkbox" id="blessing-dread" value="dread"><label for="blessing-dread" class="label-inline blessing-header"> Dread Raiders (Everyone Else)</label> - All Crusade Army models must NOT have the Imperium or Chaos keyword
+After both players have deployed their armies, you can select up to two units from your Crusade Army and redeploy them.  When doing so, those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.
+
+        </div>
+    </div>
+</body>
+</html>
