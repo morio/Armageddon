@@ -14,6 +14,7 @@
  .tactical-agenda {display: none;}
  .agenda-reminder {display: none;}
  .other-agenda-reminder {display: none;}
+ .alliance {display: none;}
 .center-text { position: absolute; }
 .alert-fixed {
     position:fixed; 

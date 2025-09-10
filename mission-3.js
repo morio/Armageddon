@@ -1,4 +1,20 @@
 const mission_num = 3
+
+function select_alliance()
+{
+    const alliance_set = document.querySelectorAll(".alliance");
+    const alliance_select = document.getElementById("alliance-select");
+    localStorage.setItem("m"+mission_num+"-alliance-select", alliance_select.value);
+    alliance_set.forEach(alliance => {
+        alliance.style.display = "none";
+    });
+    if (alliance_select.value && alliance_select.value !== "none")
+    {
+        const alliance_selected = document.querySelector("." + alliance_select.value);
+        alliance_selected.style.display = "block";
+    }
+}
+
 function select_anomaly()
 {
     const anomalies = document.querySelectorAll('.anomalies');
@@ -152,16 +168,22 @@ function check_blessing()
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    // Alliance
+    const alliance_select = document.getElementById("alliance-select");
+    alliance_select.addEventListener("change", (_) => {select_alliance();});
+    alliance_select.value = localStorage.getItem("m"+mission_num+"-alliance-select") || "none";
+    select_alliance();
+
     // Anomalies
     const anomaly_set_1 = document.getElementById('anomaly-set-1');
-    anomaly_set_1.addEventListener("change", (_) => {select_anomaly()});
+    anomaly_set_1.addEventListener("change", (_) => {select_anomaly();});
     anomaly_set_1.value = localStorage.getItem("m"+mission_num+"-anomaly-set-1") || "none";
 
     
     const anomaly_set_2 = document.getElementById('anomaly-set-2');
     if (anomaly_set_2)
     {
-        anomaly_set_2.addEventListener("change", (_) => {select_anomaly()});
+        anomaly_set_2.addEventListener("change", (_) => {select_anomaly();});
         anomaly_set_2.value = localStorage.getItem("m"+mission_num+"-anomaly-set-2") || "none"; 
     }
     select_anomaly();
