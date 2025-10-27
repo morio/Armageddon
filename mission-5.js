@@ -206,14 +206,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     select_anomaly();
 
     // Datasheets
-    const datasheet_selectors = document.querySelectorAll(".datasheet-selector");
-    let datasheet_index = 1;
-    datasheet_selectors.forEach(datasheet =>
-    {
-        datasheet.addEventListener("change", (_) => {select_datasheet()});
-        datasheet.value = localStorage.getItem("m"+mission_num+"-select-datasheet-"+ datasheet_index) || "none";
-        datasheet_index++;
-    });
+    // const datasheet_selectors = document.querySelectorAll(".datasheet-selector");
+    // let datasheet_index = 1;
+    // datasheet_selectors.forEach(datasheet =>
+    // {
+    //     datasheet.addEventListener("change", (_) => {select_datasheet()});
+    //     datasheet.value = localStorage.getItem("m"+mission_num+"-select-datasheet-"+ datasheet_index) || "none";
+    //     datasheet_index++;
+    // });
     const datatsheet_show_all = document.getElementById("datasheet-show-all-cb");
     if (localStorage.getItem("m"+mission_num+"-show-all-datasheets") === "true")
         datatsheet_show_all.checked = true;
@@ -222,6 +222,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     datatsheet_show_all.addEventListener("change", (_) => {select_datasheet();})
     select_datasheet();
 
+    // Tactical Agendas
     const tactical_agenda = document.getElementById("tactical-agenda-set");
     tactical_agenda.addEventListener("change", (event) => {select_tactical_agenda(event)});
     tactical_agenda.value = localStorage.getItem("m"+mission_num+"-select-tactical-agenda") || "none";
